@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 export default function Booth() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Booth</Text>
+      <View style={styles.screen} />
+      <View style={styles.bottomBar} />
     </View>
   );
 }
@@ -12,12 +13,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#25292e",
-    alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
   },
-  text: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
+  screen: {
+    marginTop: 50,
+    marginHorizontal: 20,
+    height: 400,
+    backgroundColor: "#fff",
+  },
+  bottomBar: {
+    width: "100%",
+    height: 70,
+    backgroundColor: "#fff",
   },
 });
