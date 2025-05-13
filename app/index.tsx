@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import Button from "../components/Button";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome PICPICO</Text>
+      <Button label="Welcome PICPICO" />
     </View>
   );
 }
@@ -14,10 +15,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#25292e",
     alignItems: "center",
     justifyContent: "center",
-  },
-  text: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
   },
 });
