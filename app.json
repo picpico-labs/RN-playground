@@ -37,6 +37,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2d71483b-f26d-4511-af94-4efe09a4e824"
+      }
+    },
+    "owner": "picpico-labs"
   }
 }
